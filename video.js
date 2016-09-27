@@ -27,7 +27,7 @@
         video.volume += 0.1;
     }
 
-   /* var btn2 = document.getElementById('btn2');
+    var btn2 = document.getElementById('btn2');
     btn2.onclick = function() {
         video.volume -= 0.1;
     }
@@ -39,5 +39,5 @@
         } else {
             video.webkitRequestFullscreen();
         }
-    }*/
+    }
 }(window))
