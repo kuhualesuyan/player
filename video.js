@@ -13,7 +13,7 @@
         video.play();
     }
 
-    /*var btn = document.getElementById('btn');
+    var btn = document.getElementById('btn');
     btn.onclick = function() {
         if (video.paused) {
             video.play();
@@ -27,7 +27,7 @@
         video.volume += 0.1;
     }
 
-    var btn2 = document.getElementById('btn2');
+   /* var btn2 = document.getElementById('btn2');
     btn2.onclick = function() {
         video.volume -= 0.1;
     }
