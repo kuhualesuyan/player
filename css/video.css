@@ -1,0 +1,111 @@
+#img1 {
+    position: absolute;
+    left: 314px;
+    top: 153px;
+    width: 55px;
+    display: none;
+}
+#img{
+	width: 28px;
+    height: 20px;
+}
+
+#mydiv {
+    width: 638px;
+    border: 1px solid #fff;
+}
+
+#btn3 {
+    top: 363px;
+    position: absolute;
+    left: 616px;
+}
+
+#btn4 {
+    position: absolute;
+    left: 133px;
+    width: 28px;
+    height: 20px;
+    top: 368px;
+}
+
+#div2 {
+    /*background-color: red;*/
+    width: 0px;
+    height: 16px;
+    border-right: 2px solid blue;
+    border-radius: 10px 10px;
+}
+#span {
+    background-color: ;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#div1 {
+    background-color: gray;
+    height: 16px;
+    cursor: pointer;
+    width: 300px;
+    border-radius: 10px 10px;
+}
+#mydiv1{
+	width: 100px;
+    height: 30px;
+    border: 1px solid blue;
+}
+#div{
+	position: absolute;
+    top: 368px;
+    left: 170px;
+    /*display: none;*/
+}
+#btn5{
+	width: 28px;
+    height: 20px;
+    position: absolute;
+    left: 59px;
+    top: 368px;
+}
+#btn6{
+	width: 28px;
+    height: 20px;
+    position: absolute;
+    left: 95px;
+    top: 368px;
+}
+#yinliang{
+	position: absolute;
+    left: 503px;
+    top: 375px;
+}
+#yinliang1 {
+    background-color: gray;
+    height: 5px;
+    cursor: pointer;
+    width: 101px;
+    border-radius: 10px 10px;
+}
+#yinliang2 {
+    
+    width: 0px;
+    height: 5px;
+    border-right: 2px solid blue;
+    border-radius: 10px 10px;
+}
+#yinliang3{
+	width: 10px;
+    height: 10px;
+    background-color: rgb(76, 74, 72);
+    position: absolute;
+    top: -3px;
+    border-radius: 9px;
+}
+#btn7{
+	width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 483px;
+    top: 367px;
+}
