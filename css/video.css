@@ -18,12 +18,14 @@
 #btn3 {
     top: 363px;
     position: absolute;
-    left: 616px;
+    left: 624px;
+    width: 30px;
+    height: 23px;
 }
 
 #btn4 {
     position: absolute;
-    left: 133px;
+    left: 117px;
     width: 28px;
     height: 20px;
     top: 368px;
@@ -34,7 +36,7 @@
     width: 0px;
     height: 16px;
     border-right: 2px solid blue;
-    border-radius: 10px 10px;
+    border-radius: 9px;
 }
 #span {
     background-color: ;
@@ -44,7 +46,7 @@
 }
 
 #div1 {
-    background-color: gray;
+    background-color: #2D2727;
     height: 16px;
     cursor: pointer;
     width: 300px;
@@ -57,22 +59,22 @@
 }
 #div{
 	position: absolute;
-    top: 368px;
-    left: 170px;
+    top: 369px;
+    left: 150px;
     /*display: none;*/
 }
 #btn5{
 	width: 28px;
     height: 20px;
     position: absolute;
-    left: 59px;
+    left: 55px;
     top: 368px;
 }
 #btn6{
 	width: 28px;
     height: 20px;
     position: absolute;
-    left: 95px;
+    left: 86px;
     top: 368px;
 }
 #yinliang{
@@ -81,7 +83,7 @@
     top: 375px;
 }
 #yinliang1 {
-    background-color: gray;
+   background-color: #2d2727;
     height: 5px;
     cursor: pointer;
     width: 101px;
@@ -101,11 +103,34 @@
     position: absolute;
     top: -3px;
     border-radius: 9px;
+    left: 92px;
 }
 #btn7{
-	width: 20px;
+	width: 21px;
     height: 20px;
     position: absolute;
-    left: 483px;
+    left: 455px;
+    top: 367px;
+}
+#btn8{
+	position: absolute;
+    left: 612px;
+    top: 8px;
+}
+.hide{
+	display: none;
+}
+.btn9{
+	position: absolute;
+    left: 607px;
+    width: 19px;
+    height: 20px;
+    top: 366px;
+}
+.btn10{
+	position: absolute;
+    left: 478px;
+    width: 21px;
+    height: 21px;
     top: 367px;
 }

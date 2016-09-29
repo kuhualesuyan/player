@@ -7,6 +7,7 @@
     var div = document.getElementById('div');
     var span1 = document.getElementById('span1');
     var yinliang = document.getElementById('yinliang');
+
     video.onplay = function() {
         img1.style.display = "none";
         div.style.display = "block";
@@ -25,23 +26,23 @@
     btn.onclick = function() {
         if (video.paused) {
             video.play();
-            img.src = "images/7.jpg";
+            img.src = "images/stop.jpg";
         } else {
             video.pause();
-            img.src = "images/2.jpg";
+            img.src = "images/start.jpg";
         }
     }
 
     // 设置video全屏
     var btn3 = document.getElementById('btn3');
     btn3.onclick = function() {
-        if (video.fullScreenFlag) {
-            video.webkitCancelFullScreen();
-        } else {
-            video.webkitRequestFullscreen();
+            if (video.fullScreenFlag) {
+                video.webkitCancelFullScreen();
+            } else {
+                video.webkitRequestFullscreen();
+            }
         }
-    }
-// 设置快进
+        // 设置快进
     var btn4 = document.getElementById('btn4');
     btn4.onclick = function() {
         video.playbackRate = 10;
@@ -56,9 +57,9 @@
     btn6.onclick = function() {
             video.playbackRate = 1;
         }
-// 设置进度条和时间
-// offsetwidth:是元素相对父元素的偏移宽度。等于border+padding+width
-// toFixed() 方法可把 Number 四舍五入为指定小数位数的数字。
+        // 设置进度条和时间
+        // offsetwidth:是元素相对父元素的偏移宽度。等于border+padding+width
+        // toFixed() 方法可把 Number 四舍五入为指定小数位数的数字。
     video.ontimeupdate = function() {
         var time = video.duration;
         document.getElementById('div1');
@@ -66,7 +67,7 @@
         var percent = video.currentTime / video.duration;
         div2.style.width = percent * (div1.offsetWidth) + "px";
         span.innerHTML = (percent * 100).toFixed(1);
- 
+
         var sj = video.currentTime;
         var miao1 = (parseInt(sj)) % 60;
         var fen1 = (parseInt(sj / 60)) % 60;
@@ -82,21 +83,35 @@
 
         div2.innerHTML = fen1 + ':' + miao1 + '/' + fen + ":" + miao;
     }
-    
+
     var btn7 = document.getElementById('btn7');
-    btn7.onclick = function(){
-        if(video.muted == true){
-            video.muted = false;
-        }else{
-            video.muted = true;
+    btn7.onclick = function() {
+            if (video.muted == true) {
+                video.muted = false;
+            } else {
+                video.muted = true;
+            }
         }
+        // 设置声音的大小
+    var btn9 = document.getElementById('btn9');
+    btn9.classList.add('btn9');
+    btn9.onclick = function() {
+        video.volume -= 0.1;
+        yinliang3.style.left = video.volume * 100 + "px";
     }
-    var yinliang3 = document.getElementById('yinliang3');
-    yinliang3.onclick = function(){
-        yinliang3.onmousemove = function(){
+    var btn10 = document.getElementById('btn10');
+    btn10.classList.add('btn10');
+    btn10.onclick = function() {
             video.volume += 0.1;
+            yinliang3.style.left = video.volume * 100 + "px";
         }
-        
+        // 点击x,video变没
+    var btn8 = document.getElementById('btn8');
+    btn8.onclick = function() {
+        video.classList.add('hide');
+        mydiv.classList.add('hide');
+        div.classList.add('hide');
+        div1.classList.add('hide');
+        yinliang.classList.add('hide');
     }
 }(window))
-  
