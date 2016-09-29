@@ -8,6 +8,8 @@
 #img{
 	width: 28px;
     height: 20px;
+    position: absolute;
+    top: 368px;
 }
 
 #mydiv {
@@ -133,4 +135,10 @@
     width: 21px;
     height: 21px;
     top: 367px;
+}
+#video{
+	position: absolute;
+    top: -232px;
+    width: 636px;
+    height: 823px;
 }

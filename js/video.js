@@ -105,7 +105,7 @@
             video.volume += 0.1;
             yinliang3.style.left = video.volume * 100 + "px";
         }
-        // 点击x,video变没
+        // 点击x,video消失
     var btn8 = document.getElementById('btn8');
     btn8.onclick = function() {
         video.classList.add('hide');
