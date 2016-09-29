@@ -142,3 +142,11 @@
     width: 636px;
     height: 823px;
 }
+#input{
+	position: absolute;
+    top: 402px;
+}
+.bf{
+	position: absolute;
+    top: 427px;
+}

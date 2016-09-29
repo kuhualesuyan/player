@@ -7,6 +7,7 @@
     var div = document.getElementById('div');
     var span1 = document.getElementById('span1');
     var yinliang = document.getElementById('yinliang');
+    var input = document.getElementById('input');
 
     video.onplay = function() {
         img1.style.display = "none";
@@ -113,5 +114,14 @@
         div.classList.add('hide');
         div1.classList.add('hide');
         yinliang.classList.add('hide');
+        input.classList.add('hide');
+    }
+    var bf = document.getElementById('bf');
+    bf.classList.add('bf');
+    bf.onclick = function(){
+        var file = input.files[0];
+        var url = URL.createObjectURL(file);
+        video.src = url;
+        video.onplay();
     }
 }(window))
