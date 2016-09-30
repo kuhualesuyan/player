@@ -7,14 +7,17 @@
     var span1 = document.getElementById('span1');
     var yinliang = document.getElementById('yinliang');
     var input = document.getElementById('input');
-
+    var advertisement = document.getElementById('advertisement');
+    video.loop = true;
     video.onplay = function() {
         start.style.display = "none";
         div.style.display = "block";
+        advertisement.style.display = "none";
     }
 
     video.onpause = function() {
         start.style.display = "block";
+        advertisement.style.display = "block";
     }
 
 

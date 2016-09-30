@@ -151,3 +151,13 @@
     left: 178px;
 
 }
+#advertisement{
+	width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    position: absolute;
+    top: 95px;
+    left: 198px;
+    display: none;
+    text-align: center;
+}
