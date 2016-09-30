@@ -136,6 +136,4 @@
         video.src = url;
         video.onplay();
     }
-
-
 }(window))
