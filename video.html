@@ -6,39 +6,48 @@
     <meta charset="utf-8">
     <script type="text/javascript" defer src="js/video.js"></script>
     <link rel="stylesheet" type="text/css" href="css/video.css">
+    <!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 </head>
 
 <body>
-    <video id="video" src="https://media.w3.org/2010/05/sintel/trailer.mp4" poster="images/dh.jpg"></video>
-    <div id="mydiv">
-        <img src="images/stop.jpg" id="stop">
-        <img src="images/start.jpg" id="start">
-        <img src="images/all.jpg" id="quanping">
-        <img src="images/next.jpg" id="kuanjin">
-        <img src="images/prev.jpg" id="manfang">
-        <img src="images/zt.jpg" id="zhengchang">
-        <img src="images/vjian.png" id="shengyin">
-        <img src="images/x.jpg" id="xiaoshibtn">
-        <button id="ylbtn">-</button>
-        <button id="btnyl">+</button>
-        <div id="div">
-            <div id="xianshidiv">
-                <div id="jindudiv" style="width: 299.301px;">
-                    <span id="span"></span>
-                </div>
-            </div>
-        </div>
-        <div id="yinliang">
-            <div id="xianshiyinliang">
-                <div id="jinduyinliang" style="width: 100px;">
-                    <div id="dianjiyinliang"></div>
-                </div>
+<video id="video" src="https://media.w3.org/2010/05/sintel/trailer.mp4" poster="images/dh.jpg"></video>
+<div id="mydiv">
+    <img src="images/stop.jpg" id="stop">
+    <img src="images/start.jpg" id="start">
+    <img src="images/all.jpg" id="quanping">
+    <img src="images/next.jpg" id="kuanjin">
+    <img src="images/prev.jpg" id="manfang">
+    <img src="images/zt.jpg" id="zhengchang">
+    <img src="images/vjian.png" id="shengyin">
+    <img src="images/x.jpg" id="xiaoshibtn">
+    <button id="ylbtn">-</button>
+    <button id="btnyl">+</button>
+    <div id="div">
+        <!--<div id="xianshidiv">-->
+        <!--<div id="jindudiv" style="width: 299.301px;">-->
+        <!--<span id="span"></span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="progress" id="xianshidiv">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                 id="jindudiv">
+                <span class="sr-only" id="span"></span>
             </div>
         </div>
     </div>
-    <input type="file" name="" id="input">
-    <button id="bf">播放</button>
-    <div id="advertisement">广告</div>
+
+    <div id="yinliang">
+        <div id="xianshiyinliang">
+            <div id="jinduyinliang" style="width: 100px;">
+                <div id="dianjiyinliang"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="file" name="" id="input">
+<button id="bf">播放</button>
 </body>
 
 </html>

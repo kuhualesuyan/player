@@ -7,17 +7,14 @@
     var span1 = document.getElementById('span1');
     var yinliang = document.getElementById('yinliang');
     var input = document.getElementById('input');
-    var advertisement = document.getElementById('advertisement');
     video.loop = true;
     video.onplay = function() {
         start.style.display = "none";
         div.style.display = "block";
-        advertisement.style.display = "none";
     }
 
     video.onpause = function() {
         start.style.display = "block";
-        advertisement.style.display = "block";
     }
 
 
@@ -44,7 +41,8 @@
                 video.webkitRequestFullscreen();
             }
         }
-        // 设置快进
+
+        // 设置快进和慢放
     var kuanjin = document.getElementById('kuanjin');
     kuanjin.onclick = function() {
         video.playbackRate = 10;
@@ -96,6 +94,7 @@
     xianshidiv.onclick = function() {
             video.currentTime = parseInt(event.offsetX) / 300 * (video.duration);
         }
+
         // 设置静音
     var shengyin = document.getElementById('shengyin');
     shengyin.onclick = function() {
@@ -120,13 +119,15 @@
             video.volume += 0.1;
             dianjiyinliang.style.left = video.volume * 100 + "px";
         }
-        // 点击x,所有东西消失
+
+    // 点击x,所有东西消失
     var xiaoshibtn = document.getElementById('xiaoshibtn');
     xiaoshibtn.onclick = function() {
         video.classList.add('hide');
         mydiv.classList.add('hide');
         input.classList.add('hide');
         bf.classList.add('hide');
+        video.pause();
     }
     var bf = document.getElementById('bf');
     bf.classList.add('bf');
